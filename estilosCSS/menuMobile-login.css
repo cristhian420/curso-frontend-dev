@@ -1,0 +1,65 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-highlight: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2; /* green hospitaly*/
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+.icono {
+    position: absolute;
+    right: 18px;
+    top: 21px;
+}
+.main-container {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.main-container ul {
+    list-style: none;
+}
+main ul a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 900;
+}
+.list-category {
+    margin-top: 37px;
+}
+.list-category li {
+    margin-bottom: 35px;
+    margin-left: 30px;
+}
+.list-category li:first-child{
+    margin-bottom: 37px;
+}
+.list-account {
+    border-top: 1px solid var(--text-input-field);
+    margin: 30px;
+    padding-top: 33px;
+}
+.list-account li {
+    margin-bottom: 37px;
+}
+.log-in {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    margin-bottom: 30px;
+}
+.log-in li a {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.log-in li {
+    margin-bottom: 4px;
+}

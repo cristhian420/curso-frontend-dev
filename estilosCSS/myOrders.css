@@ -1,0 +1,69 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-highlight: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2; /* green hospitaly*/
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    place-items: center;
+}
+.my-order-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 339px;
+    height: 50px;
+    margin-top: 8px;
+}
+.title {
+    font-size: 24px;
+}
+.container-orders{
+    display: flex;
+    flex-direction: column;
+}
+.articles-container {
+    height: 76px;
+    min-width: 339px;
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    margin-top: 10px;
+
+}
+.articles-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+}
+.articles-container div span:first-child {
+    font-weight: 900;
+}
+.articles-container div span:last-child {
+    font-weight: 300;
+}
+.articles-container p{
+    text-align: end;
+    margin: auto 10px;
+}
+.flecha{
+    text-align: end;
+    margin: auto 10px;
+}

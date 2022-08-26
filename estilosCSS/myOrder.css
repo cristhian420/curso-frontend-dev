@@ -1,0 +1,74 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-highlight: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2; /* green hospitaly*/
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    place-items: center;
+}
+.my-order-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 375px;
+    height: 50px;
+    margin-top: 8px;
+}
+.title {
+    font-size: 24px;
+}
+
+.articles-container {
+    height: 76px;
+    min-width: 339px;
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 8px;
+    padding: 0 18px;
+}
+.articles-container div {
+    display: flex;
+    flex-direction: column;
+}
+.articles-container div span:first-child {
+    font-weight: 900;
+}
+.articles-container div span:last-child {
+    font-weight: 300;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    min-width: 330px;
+    height: auto;
+}
+.img-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    box-shadow: 1px 1px 6px;
+}
+.product-info {
+    color: var(--dark);
+    font-weight: 300;
+    margin-left: -75px;
+}

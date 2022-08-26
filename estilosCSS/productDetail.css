@@ -1,0 +1,88 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-highlight: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2; /* green hospitaly*/
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+.input-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    width: 95%;
+    border: none;
+    height: 59px;
+    border-radius: 8px;
+    
+}
+.product-detail--close {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    width: 14px;
+    height: 14px;
+    align-items: center;
+}
+.product-detail--close:hover {
+    cursor: pointer;
+}
+
+.product-detail {
+    width: 320px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    place-items: center;
+    
+}
+
+.product-detail--img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    margin-top: 10px;
+}
+.text-container {
+    margin: 12px;
+    padding: 12px;
+    font-size: 14px;
+}
+.precio {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 4px;
+}
+.titulo {
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+@media (max-width: 640px) {
+    .product-detail {
+        width: 300px;
+        margin-left: 30px;
+    }
+    .product-detail--close {
+        left: 30px;
+    }
+
+}

@@ -1,0 +1,11 @@
+:root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --dark: #232830;
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --primary-color: #ACD9B2; /* green hospitaly*/
+}
+html {
+        font-family: Quicksand, Arial, Helvetica, sans-serif;
+}

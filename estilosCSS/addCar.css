@@ -1,0 +1,78 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-highlight: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2; /* green hospitaly*/
+    --standar-margin: .4rem;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 384px;
+    height: 718px;
+    border: 1px solid var(--text-input-field);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 0px 6px 0px #0000001F;
+}
+.close-icon {
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.product {
+    width: 100%;
+    border-radius: 0 0 16px 16px;
+    margin-bottom: 16px;
+}
+.text-container {
+    margin-left: 16px;
+    font-weight: 300;
+    color: var(--dark);
+}
+.text-container p:first-child {
+    font-weight: 900;
+    color: var(--black);
+}
+.text-container p:nth-child(2) {
+    margin-bottom: 18px;
+}
+button {
+    width: 316px;
+    height: 59px;
+    margin-top: 64px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 8px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+button img {
+    color: white;
+    padding-right: 8px;
+    width: 23px;
+}
