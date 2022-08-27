@@ -85,6 +85,7 @@ nav {
 }
 .nav-right-email {
     font-size: 14px;
+    cursor: pointer;
 }
 
 
@@ -92,7 +93,7 @@ nav {
     position: absolute;
     background-color: var(--white);
     top: 71px;
-    right: 56px;
+    right: 40px;
     height: auto;
     width: 115px;
     border-radius: 4px;
