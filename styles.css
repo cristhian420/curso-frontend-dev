@@ -1,0 +1,145 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --light-highlight: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --primary-color: #ACD9B2; /* green hospitaly*/
+    --standar-margin: .4rem;
+}
+.inactive {
+    display: none;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--text-input-field);
+    padding: 0 4px;
+}
+.menu {
+    height: 30px;
+    width: 30px;
+    margin: auto 4px;
+
+    display: none;
+}
+.logo {
+    width: 130px;
+    padding: 8px;
+}
+.nav-right,
+.nav-left {
+    display: flex;
+    margin-top: 10px;
+}
+.nav-right ul,
+.nav-left ul {
+    list-style: none;
+    color: var(--light-highlight);
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-right ul li a,
+.nav-left ul li a {
+    text-decoration: none;
+    color: var(--light-highlight);
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 8px;
+    margin: auto 4px;
+}
+.nav-right ul li a:hover,
+.nav-left ul li a:hover {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 8px;
+} 
+.nav-right-cart {
+    position: relative;
+    margin: auto;
+}
+.nav-left-list div {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    top: 20px;
+    right: 12px;
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-right-email {
+    font-size: 14px;
+}
+
+
+.menu-nav-main-container {
+    position: absolute;
+    background-color: var(--white);
+    top: 71px;
+    right: 56px;
+    height: auto;
+    width: 115px;
+    border-radius: 4px;
+    border-top: none;
+    border: 1px solid var(--text-input-field);
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+}
+.list-container {
+    list-style: none;
+    padding-left: 0;
+    text-align: end;
+}
+.list-container li a {
+    text-decoration: none;
+    color: var(--black);
+    display: inline-block;
+}
+.list-container li:last-child a {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.list-container li:last-child {
+    border-top: 1px solid var(--light-highlight);
+}
+.list-container li:nth-child(1),
+.list-container li:nth-child(2) {
+    font-weight: 900;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+@media (max-width: 640px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .nav-right ul {
+        display: none;
+    }
+    .nav-right-email {
+        display: none;
+    }
+}
