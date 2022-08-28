@@ -1,3 +1,4 @@
+/*variables guardadas*/
 :root {
     --white: #FFFFFF;
     --black: #000000;
@@ -7,11 +8,8 @@
     --primary-color: #ACD9B2; /* green hospitaly*/
     --standar-margin: .4rem;
 }
-.inactive {
-    display: none;
-}
 
-
+/*parametros generales*/
 * {
     padding: 0;
     margin: 0;
@@ -19,18 +17,23 @@
 body {
     font-family: Quicksand, Arial, Helvetica, sans-serif;
 }
+.inactive {
+    display: none;
+}
+
+/* Area de Nav*/
 nav {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--text-input-field);
     padding: 0 4px;
 }
-.menu {
+.menu-nav-right {
     height: 30px;
     width: 30px;
     margin: auto 4px;
-
     display: none;
+    cursor: pointer;
 }
 .logo {
     width: 130px;
@@ -88,7 +91,7 @@ nav {
     cursor: pointer;
 }
 
-
+/* Menu desktop*/
 .menu-nav-main-container {
     position: absolute;
     background-color: var(--white);
@@ -127,12 +130,74 @@ nav {
     margin-bottom: 16px;
 }
 
+/* Menu mobile */
+.icono {
+    position: absolute;
+    right: 18px;
+    top: 21px;
+}
+.menu-mobile--main-container {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.menu-mobile--main-container ul {
+    list-style: none;
+}
+.menu-mobile--total-container {
+    position: absolute;
+    background-color: var(--white);
+    top: 70px;
+}
+.menu-mobile--total-container img {
+    cursor: pointer;
+}
+.list a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 900;
+}
+.list-category {
+    margin-top: 20px;
+}
+.list-category li {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.list-category li:first-child{
+    margin-bottom: 25px;
+}
+.list-account {
+    border-top: 1px solid var(--text-input-field);
+    margin: 0 20px;
+    padding-top: 20px;
+}
+.list-account li {
+    margin-bottom: 25px;
+}
+.sign-out {
+    position: absolute;
+    bottom: -95px;
+    left: 20px;
+}
+.sign-out li a {
+    font-weight: 300;
+}
+.sign-out li {
+    margin-bottom: 4px;
+}
+.sign-out li:last-child a {
+    color: var(--primary-color);
+    margin-top: 15px;
+    font-weight: 700;
+}
 
 
 
-
+/* Media Querys */
 @media (max-width: 640px) {
-    .menu {
+    .menu-nav-right {
         display: flex;
         align-items: center;
         justify-content: center;
