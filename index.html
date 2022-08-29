@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>YardSale - tienda en linea de cosas cheeedas</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
 <body>
     <header>
         <nav>
+
             <div class="menu-mobile--total-container inactive">
                 <img src="../icons/icon_close.png" alt="icono cerrar" class="icono">
                 <div class="menu-mobile--main-container">
@@ -38,10 +39,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-right">
-                <img src="../icons/icon_menu.svg" alt="" class="menu-nav-right">
+            <div class="nav-left">
+                <img src="../icons/icon_menu.svg" alt="" class="menu-nav-left--icon">
                 <img src="../logos/logo_yard_sale.svg" alt="logo" class="logo">
-                <ul class="nav-right-list">
+                <ul class="nav-left-list">
                     <li><a href="">All</a></li>
                     <li><a href="">Clothes</a></li>
                     <li><a href="">Electronics</a></li>
@@ -50,14 +51,12 @@
                     <li><a href="">Others</a></li>
                 </ul>
             </div>
-            <div class="nav-left">
-                <ul class="nav-left-list">
+            <div class="nav-right">
+                <ul class="nav-right-list">
                     <li class="nav-right-email">cristhians@hola.com</li>
                     <li class="nav-right-car">
-                        <a href="">
-                            <img src="../icons/icon_shopping_cart.svg" alt="shopping cart logo">
-                        </a>
-                        <div></div>
+                        <img class="nav-right--cartIcon" src="../icons/icon_shopping_cart.svg" alt="shopping cart logo">
+                        <div>3</div>
                     </li>
                 </ul>
             </div>
@@ -68,8 +67,60 @@
                     <li><a href="">Sign out</a></li>
                 </ul>
             </div>
+
         </nav>
     </header>
+
+    <aside class="aside--my-order-cart inactive">
+        <div class="div--my-order-cart">
+            <div class="my-order-container">
+                <h1 class="title--my-order-cart">My Order</h1>
+            </div>
+        </div>
+
+        <div class="articles-container--my-order-cart">
+            <div>
+                <span>04.25.2021</span>
+                <span>6 articles</span>
+            </div>
+            <p>$120</p>
+        </div>
+
+        <div class="cards-container--my-order-cart">
+            <figure class="img-container--my-order-cart">
+                <img src="https://www.newera.mx/medias/sys_master/root/root/hdb/h43/9634660646942/9634660646942.png" alt="player tie dye" class="product">
+            </figure>
+            <div class="product-info--my-order-cart">
+                    <span>Plara tie dye</span>
+            </div>
+            <div class="product-price--my-order-cart">
+                <span>$120.00</span>
+            </div>
+        </div>
+
+        <div class="cards-container--my-order-cart">
+            <figure class="img-container--my-order-cart">
+                <img src="https://www.newera.mx/medias/sys_master/root/root/hdb/h43/9634660646942/9634660646942.png" alt="player tie dye" class="product">
+            </figure>
+            <div class="product-info--my-order-cart">
+                    <span>Plara tie dye</span>
+            </div>
+            <div class="product-price--my-order-cart">
+                <span>$120.00</span>
+            </div>
+        </div>
+        <div class="cards-container--my-order-cart">
+            <figure class="img-container--my-order-cart">
+                <img src="https://www.newera.mx/medias/sys_master/root/root/hdb/h43/9634660646942/9634660646942.png" alt="player tie dye" class="product">
+            </figure>
+            <div class="product-info--my-order-cart">
+                    <span>Plara tie dye</span>
+            </div>
+            <div class="product-price--my-order-cart">
+                <span>$120.00</span>
+            </div>
+        </div>
+    </aside>
 
     <script src="./main.js"></script>
 </body>
