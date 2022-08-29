@@ -208,4 +208,13 @@ nav {
     .nav-right-email {
         display: none;
     }
+    .menu-nav-main-container {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) {
+    .menu-mobile--total-container{
+        display: none;
+    }
 }
