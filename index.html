@@ -71,7 +71,7 @@
         </nav>
     </header>
 
-    <aside class="aside--my-order-cart inactive">
+    <aside id="aside--my-order-cart" class="aside--my-order-cart inactive">
         <div class="div--my-order-cart">
             <div class="my-order-container">
                 <h1 class="title--my-order-cart">My Order</h1>
@@ -120,27 +120,29 @@
                 <span>$120.00</span>
             </div>
         </div>
+        <button id="input-button--my-order" class="input-button"><img src="../icons/icon_shopping_cart.svg" alt="" srcset=""> Add to cart</button>
+
     </aside>
 
-    <section class="main-container">
-        <div class="cards-container">
-
-            <!-- <div class="product-card">
-                <img src="https://cdn.shopify.com/s/files/1/0365/1921/5241/products/20201003_131156_530x@2x.jpg?v=1601754362" alt="player tie dye" class="product-img">
-                <div class="product-info">
-                    <div>
-                        <p>$120.00</p>
-                        <p>Playera</p>
-                    </div>
-                    <figure>
-                        <img src="/icons/bt_add_to_cart.svg" alt="">
-                    </figure>
-                </div> 
-            </div> -->
-
-
+    <aside id="aside--product-detail-cart" class="inactive">
+        <div class="aside--product-detail-cart">
+            <div class="img-container">
+                <span class="product-detail--close"><img src="../icons/icon_close.png" alt="" srcset=""></span>
+                <img src="https://www.newera.mx/medias/sys_master/root/root/hdb/h43/9634660646942/9634660646942.png" alt="player tie dye" class="product-detail--img">
+            </div>
+            <div class="text-container">
+                <p class="precio">$50</p>
+                <p class="titulo">Playera tye dye</p>
+                <p class="description">Playera super woay con un estilo clasico ideal para el verano</p>
+            </div>
+            <button class="input-button"><img src="../icons/icon_shopping_cart.svg" alt="" srcset=""> Add to cart</button>
         </div>
-    </section>
+    </aside>
+
+    <main class="main-container">
+        <div class="cards-container">
+        </div>
+    </main>
 
 
     <script src="./main.js"></script>
