@@ -148,13 +148,15 @@ nav {
     height: auto;
     display: flex;
     flex-direction: column;
+    background-color: var(--white);
+
 }
 .menu-mobile--main-container ul {
     list-style: none;
+    background-color: var(--white);
 }
 .menu-mobile--total-container {
     position: absolute;
-    background-color: var(--white);
     top: 70px;
 }
 .menu-mobile--total-container img {
@@ -184,9 +186,7 @@ nav {
     margin-bottom: 25px;
 }
 .sign-out {
-    position: absolute;
-    bottom: -95px;
-    left: 20px;
+padding: 16px;
 }
 .sign-out li a {
     font-weight: 300;
@@ -265,18 +265,23 @@ nav {
     margin-bottom: 12px;
 }
 
-/* Aside product detail cart */
+/* Aside product detail card */
 .input-button {
     background-color: var(--primary-color);
     color: var(--white);
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
-    width: 95%;
+    width: 98%;
     border: none;
     height: 59px;
     border-radius: 8px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-button img {
+    margin-right: 8px;
 }
 .product-detail--close {
     background-color: white;
@@ -295,28 +300,29 @@ nav {
     cursor: pointer;
 }
 
-.aside--product-detail-cart {
+.aside--product-detail-card {
     width: 320px;
-    padding: 10px;
+    padding: 0 5px 10px 5px;
     position: absolute;
     right: 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
     place-items: center;
-    
+    background-color: var(--white);
+    border-radius: 10px;
 }
 .product-detail--img {
     width: 100%;
     height: 320px;
     object-fit: contain;
     border-radius: 0 0 20px 20px;
-    margin-top: 10px;
 }
-.text-container {
+.text-container--product-detail-card {
     margin: 12px;
     padding: 12px;
     font-size: 14px;
+    width: 90%;
 }
 .precio {
     font-weight: 700;
@@ -344,6 +350,7 @@ nav {
     height: var(--card-size);
     border-radius: 20px;
     object-fit: cover;
+    cursor: pointer;
 }
 .product-card  {
     width: var(--card-size);
@@ -410,10 +417,29 @@ nav {
     .product-detail--close {
         left: 30px;
     }
+    .aside--product-detail-card {
+        right: calc(50% - 165px);
+    }
 }
 
 @media (min-width: 766px) {
     .menu-mobile--total-container{
         display: none;
+    }
+}
+
+@media (max-width: 460px) {
+    .menu-mobile--total-container{
+        width: 100%;
+    }
+    .menu-mobile--main-container {
+        width: 100%;
+    }
+    .aside--my-order-cart {
+        width: 93%;
+    }
+    .articles-container--my-order-cart{
+        width: 80%;
+        min-width: 300px
     }
 }
